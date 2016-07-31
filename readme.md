@@ -28,7 +28,7 @@ Posts are added by creating a MultiMarkdown file in `posts` and adding the file 
  Because I didn't need it. Go nuts on `main.py` to add whatever you need.
  
 ##### What if I want more than one web page?
-You should definitely use something else. Check out [Pelican](http://blog.getpelican.com/) and [MkDocs](http://www.mkdocs.org/)
+You should definitely use something else. Check out [Pelican](http://blog.getpelican.com/) and [MkDocs](http://www.mkdocs.org/).
 
 ##### Why are my HTML changes disappearing?
 Make sure you're editing the static files and not `index.html`.
