@@ -12,7 +12,7 @@ To build a site with agrmin, the easiest thing is to clone from GitHub and delet
 You can then start a new repo with `git init`, make your first commit and [push your code to GitHub](https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/).
 
 ### Usage
-The code includes a sample site and is easiest to just modify as needed. To generate the web page, `main.py`. This creates `index.html`.
+The code includes a sample site that can be modified as needed. To generate the web page, `main.py`. This creates `index.html`.
 
     python3 main.py
 
