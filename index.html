@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Agrmin</title>
+        <style type="text/css">
+            body {
+                margin: 40px auto;
+                max-width: 650px;
+                line-height: 1.6;
+                font-size: 18px;
+                color: #444;
+                padding: 0 10px
+            }
+            h1, h2, h3 {
+                line-height: 1.2
+            }
+            ul {
+                list-style: none;
+            }
+            a {
+                color: #333;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Agrmin</h1>
+            <p>This site was generated from markdown documents with Python.</p>
+        </header>
+<ul>
+<li><a href=#readme>Readme</a></li>
+<li><a href=#sample-post-1>Sample Post 1</a></li>
+<li><a href=#sample-post-2>Sample Post 2</a></li>
+</ul>
+<h2 id="readme">Readme</h2>
+<h1>Agrmin: Simple Websites</h1>
+<p>Agrmin (short for Agressive Minimalism) is a script for generating a simple one page website from MultiMarkdown files. It was written to generate a website of short stories and articles. The CSS was taken from <a href="http://bettermotherfuckingwebsite.com/">bettermotherfuckingwebsite.com</a> and slightly modified.</p>
+<h3>Setup</h3>
+<p>To build a site with agrmin, the easiest thing is to clone from GitHub and delete the local repo.</p>
+<pre><code>git clone https://github.com/travisjungroth/agrmin.git project_name
+cd project_name
+rm -rf .git
+</code></pre>
+<p>You can then start a new repo with <code>git init</code>, make your first commit and <a href="https://help.github.com/articles/adding-an-existing-project-to-github-using-the-command-line/">push your code to GitHub</a>.</p>
+<h3>Usage</h3>
+<p>The code includes a sample site that can be modified as needed. To generate the web page, <code>main.py</code>. This creates <code>index.html</code>.</p>
+<pre><code>python3 main.py
+</code></pre>
+<p><code>static/header.html</code> and <code>static/footer.html</code> are static files that get added to the top and bottom of <code>index.html</code>. Modify them directly.</p>
+<p>Posts are content such as articles and stories saved as MultiMarkdown files. The links at the top of the page and the headers for each post are generated from the Title meta attribute in the file.</p>
+<p>Posts are added by creating a MultiMarkdown file in <code>posts</code> and adding the file name to the <code>post_paths</code> tuple in <code>main.py</code>. They appear in the same order on the web page as they do in the tuple.</p>
+<h3>FAQ</h3>
+<h5>Why don't you support Date/Author/Other Meta Attribute</h5>
+<p>Because I didn't need it. Go nuts on <code>main.py</code> to add whatever you need.</p>
+<h5>What if I want more than one web page?</h5>
+<p>You should definitely use something else. Check out <a href="http://blog.getpelican.com/">Pelican</a> and <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+<h5>Why are my HTML changes disappearing?</h5>
+<p>Make sure you're editing the static files and not <code>index.html</code>.</p>
+<h5>How's the test coverage?</h5>
+<p>Haha no.</p>
+<h5>I have an index.html file. Now what?</h5>
+<p>Now you need to host it. Amazon S3 makes this super cheap and easy.</p>
+<h2 id="sample-post-1">Sample Post 1</h2>
+<p>This is the Post 1 content.</p>
+<h2 id="sample-post-2">Sample Post 2</h2>
+<p>This is the Post 2 content.</p>
+    </body>
+</html>
