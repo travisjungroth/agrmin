@@ -1,4 +1,5 @@
 # Agrmin: Simple Websites
+[Sample Site](https://travisjungroth.github.io/agrmin/)
 
 Agrmin (short for Agressive Minimalism) is a script for generating a simple one page website from MultiMarkdown files. It was written to generate a website of short stories and articles. The CSS was taken from [bettermotherfuckingwebsite.com](http://bettermotherfuckingwebsite.com/) and slightly modified.
 
